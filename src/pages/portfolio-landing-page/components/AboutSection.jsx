@@ -4,11 +4,9 @@ import Icon from 'components/AppIcon';
 
 const AboutSection = () => {
   const aboutData = {
-    summary: `I'm a passionate software engineer with expertise in backend development, specializing in Java and Spring Boot frameworks. With hands-on experience in .NET, Python, and modern web technologies, I focus on building scalable, efficient applications that solve real-world problems.
+    summary: `Software Engineer with a strong foundation in Computer Science from Cairo University. I specialize in building high-performance backend systems, scalable APIs, and optimization algorithms using Java (Spring Boot).
 
-My journey in software development has been driven by curiosity and a commitment to continuous learning. I thrive in collaborative environments where I can contribute to innovative projects while expanding my technical skills and knowledge.
-
-Currently based in Cairo, Egypt, I'm actively seeking opportunities to contribute to impactful software projects and grow within a dynamic development team.`,
+With experience gained through internships at Siemens, DEPI, and active freelance projects, I have delivered solutions ranging from secure desktop applications to cloud-based optimization engines. I am passionate about solving complex logical problems, optimizing database performance, and integrating AI solutions into enterprise applications.`,
     highlights: [
       {
         icon: "Code2",

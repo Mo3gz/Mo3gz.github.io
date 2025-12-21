@@ -8,87 +8,96 @@ const ExperienceSection = () => {
   const experienceData = [
     {
       id: 1,
-      title: ".NET Web Developer",
-      company: "DEPI (Digital Egypt Pioneers Initiative)",
-      location: "Cairo, Egypt",
-      duration: "Jun 2023 - Dec 2023",
-      type: "Trainee",
-      description: "Intensive training program focused on .NET web development with hands-on project experience and comprehensive skill development in Microsoft technologies.",
+      title: "Software Engineer",
+      company: "AZM Squad",
+      location: "Remote",
+      duration: "Jul 2025 - Oct 2025",
+      type: "Internship",
+      description: "Intensive training focused on .NET Core and React.js fundamentals with practical application development.",
       achievements: [
-        "Developed full-stack web applications using ASP.NET MVC and Entity Framework",
-        "Implemented RESTful APIs with proper authentication and authorization using ASP.NET Web API",
-        "Mastered Microsoft SQL Server database design, optimization, and stored procedures",
-        "Built responsive web interfaces using HTML5, CSS3, and JavaScript",
-        "Collaborated with team of 8 developers on enterprise-level projects using C#",
-        "Participated in code reviews and agile development practices",
-        "Gained expertise in Entity Framework for data access and ORM operations"
+        "Completed intensive training track on .NET Core and React.js fundamentals",
+        "Deepened understanding of Clean Architecture and RESTful API design principles",
+        "Built and deployed practice applications demonstrating frontend-backend integration",
+        "Developed full-stack applications using modern web development practices",
+        "Gained hands-on experience with microservices architecture"
       ],
-      technologies: ["Microsoft SQL Server", "ASP.NET Web API", "ASP.NET MVC", "HTML5", "Cascading Style Sheets (CSS)", "JavaScript", "C#"],
+      technologies: [".NET Core", "React.js", "RESTful APIs", "Clean Architecture"],
       icon: "Code",
       color: "primary"
     },
     {
       id: 2,
-      title: "Linux System Administrator",
-      company: "Orange Digital Center",
-      location: "Cairo, Egypt",
-      duration: "Mar 2023 - May 2023",
-      type: "Training Program",
-      description: "Comprehensive Linux system administration training program covering network configuration, user management, and system security.",
+      title: "Full Stack Web Development",
+      company: "Deloitte",
+      location: "Remote",
+      duration: "Jul 2025 - Aug 2025",
+      type: "Internship",
+      description: "Technical mentorship program focusing on Java Spring Boot and React ecosystems.",
       achievements: [
-        "Mastered Linux command line operations and system administration tasks",
-        "Configured and managed Linux servers, services, and network infrastructure",
-        "Implemented advanced network configuration and troubleshooting techniques",
-        "Managed user accounts, permissions, and access control systems",
-        "Developed shell scripting solutions for automation and system monitoring",
-        "Applied security hardening techniques and best practices",
-        "Completed hands-on labs covering real-world enterprise scenarios"
+        "Selected for technical mentorship program focusing on Java Spring Boot and React",
+        "Gained exposure to industry standards for microservices and agile development",
+        "Learned enterprise-level development practices and architectural patterns",
+        "Developed real-world applications using Spring Boot and React"
       ],
-      technologies: ["Linux System Administration", "Network Configuration and Troubleshooting", "User Account Management", "Bash Scripting", "System Security", "Server Management"],
-      icon: "Terminal",
-      color: "accent"
+      technologies: ["Java Spring Boot", "React.js", "Microservices", "Agile Development"],
+      icon: "Layers",
+      color: "success"
     },
     {
       id: 3,
-      title: "Software Engineer",
-      company: "Siemens",
-      location: "Cairo, Egypt",
-      duration: "Sep 2022 - Feb 2023",
-      type: "Industrial Training",
-      description: "Industrial software engineering training with focus on desktop application development, Qt Creator, and software development lifecycle.",
+      title: "Software Engineer for Training AI Data",
+      company: "Outlier",
+      location: "Remote",
+      duration: "Nov 2024 - Mar 2025",
+      type: "Freelance",
+      description: "Tested and optimized AI models by identifying and correcting failure cases.",
       achievements: [
-        "Developed desktop applications using Qt Creator framework and C++",
-        "Implemented comprehensive desktop application development workflows",
-        "Applied software development lifecycle methodologies in industrial environment",
-        "Mastered desktop technologies for cross-platform application development",
-        "Participated in software design and architecture planning sessions",
-        "Collaborated with international teams on industrial automation projects",
-        "Gained experience in embedded systems and industrial communication protocols"
+        "Tested and optimized AI models for accuracy improvement",
+        "Identified and corrected failure cases to enhance model reliability",
+        "Contributed to AI model development and refinement",
+        "Improved overall model accuracy through systematic testing"
       ],
-      technologies: ["Qt Creator", "Desktop Application Development", "Software Development Life cycle", "Desktop Technologies", "Software Design"],
-      icon: "Settings",
-      color: "secondary"
+      technologies: ["AI Training", "Machine Learning", "Data Analysis"],
+      icon: "Brain",
+      color: "accent"
     },
     {
       id: 4,
-      title: "AI Trainee",
-      company: "Huawei ICT Academy",
+      title: "Software Engineer",
+      company: "DEPI (Digital Egypt Pioneers Initiative)",
       location: "Cairo, Egypt",
-      duration: "Jan 2022 - Aug 2022",
-      type: "Certification Program",
-      description: "Artificial Intelligence and Machine Learning certification program with practical projects and comprehensive AI curriculum.",
+      duration: "Apr 2024 - Oct 2024",
+      type: "Full-time",
+      description: "Developed scalable web applications and RESTful APIs using .NET Core and ASP.NET MVC.",
       achievements: [
-        "Completed comprehensive AI and ML curriculum with hands-on projects",
-        "Implemented machine learning algorithms from scratch using Python",
-        "Developed computer vision applications using OpenCV and deep learning",
-        "Built neural networks for classification and regression tasks",
-        "Applied data analysis and preprocessing techniques for ML models",
-        "Earned Huawei AI certification upon successful program completion",
-        "Created portfolio of AI projects demonstrating practical skills"
+        "Designed and implemented responsive web pages, enhancing usability",
+        "Developed scalable RESTful APIs using .NET Core Web API and ASP.NET MVC",
+        "Integrated frontend and backend for seamless user experience",
+        "Mastered Microsoft SQL Server database design and optimization",
+        "Applied SOLID principles and design patterns in enterprise applications"
       ],
-      technologies: ["Python", "TensorFlow", "OpenCV", "Machine Learning", "Deep Learning", "Data Analysis", "Neural Networks"],
-      icon: "Brain",
-      color: "success"
+      technologies: ["Microsoft SQL Server", "ASP.NET Web API", "ASP.NET MVC", ".NET Core", "HTML5", "CSS", "JavaScript", "C#"],
+      icon: "Code",
+      color: "secondary"
+    },
+    {
+      id: 5,
+      title: "Software Engineer Training - Desktop Track",
+      company: "Siemens Digital Industries Software",
+      location: "Cairo, Egypt",
+      duration: "Oct 2023 - Feb 2024",
+      type: "Internship",
+      description: "Software Engineering Diploma with focus on desktop application development.",
+      achievements: [
+        "Participated in Software Engineering Diploma at Siemens Software Academy",
+        "Built Secure Notes Organizer app with client-server architecture using C++ and Qt",
+        "Led REST API integration and collaborated in Agile team environment",
+        "Optimized memory usage and performance, applying SOLID and design patterns",
+        "Developed secure desktop applications with modern UI/UX"
+      ],
+      technologies: ["Qt Creator", "Desktop Application Development", "C++", "REST APIs", "SOLID Principles"],
+      icon: "Settings",
+      color: "warning"
     }
   ];
 

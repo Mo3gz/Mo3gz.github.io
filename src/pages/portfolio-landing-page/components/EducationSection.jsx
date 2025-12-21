@@ -4,13 +4,13 @@ import Icon from 'components/AppIcon';
 
 const EducationSection = () => {
   const educationData = {
-    degree: "Bachelor of Computer Science",
+    degree: "Bachelor's Degree in Computer Science & Operations Research and Decision Support",
     university: "Cairo University",
     location: "Cairo, Egypt",
-    duration: "2021 - 2025",
-    gpa: "2.7/4.0",
-    status: "Graduated",
-    description: `Completed a comprehensive Computer Science program with focus on software engineering, algorithms, and system design. Gained strong foundation in programming languages, database systems, and software development methodologies.`,
+    duration: "Sep 2021 - Jun 2025",
+    gpa: "2.63/4.0",
+    status: "Expected Graduation",
+    description: `Completed a comprehensive Computer Science program with focus on software engineering, algorithms, and optimization. Gained strong foundation in programming languages, database systems, software development methodologies, and operations research.`,
     coursework: [
       "Data Structures & Algorithms",
       "Software Engineering",
