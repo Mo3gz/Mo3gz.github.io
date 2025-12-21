@@ -6,21 +6,12 @@ const FooterSection = () => {
   const currentYear = new Date().getFullYear();
 
   const contactInfo = {
-    email: "ayman.ashraf@example.com",
-    phone: "+20 1234567890",
+    email: "aymanashrafmounir@gmail.com",
+    phone: "+201226333795",
     location: "Cairo, Egypt",
-    linkedin: "https://linkedin.com/in/ayman-ashraf",
+    linkedin: "https://www.linkedin.com/in/mo3gz/",
     github: "https://github.com/Mo3gz"
   };
-
-  const quickLinks = [
-    { name: "About", href: "#about" },
-    { name: "Education", href: "#education" },
-    { name: "Experience", href: "#experience" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Certificates", href: "#certificates" }
-  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -134,23 +125,6 @@ const FooterSection = () => {
               </div>
             </motion.div>
 
-            {/* Quick Links */}
-            <motion.div variants={itemVariants}>
-              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-3">
-                {quickLinks.map((link, index) => (
-                  <li key={index}>
-                    <button
-                      onClick={() => handleLinkClick(link.href)}
-                      className="text-surface/80 hover:text-surface transition-colors duration-200 flex items-center group"
-                    >
-                      <Icon name="ChevronRight" size={14} className="mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
-                      <span>{link.name}</span>
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
 
             {/* Contact Info */}
             <motion.div variants={itemVariants}>

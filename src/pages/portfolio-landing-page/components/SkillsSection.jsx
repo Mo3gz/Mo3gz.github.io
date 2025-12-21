@@ -10,122 +10,67 @@ const SkillsSection = () => {
       title: "Programming Languages",
       icon: "Code2",
       skills: [
-        { name: "C#", icon: "Hash" },
+        { name: "Java", icon: "Coffee" },
+        { name: "C++", icon: "Cpu" },
         { name: "Python", icon: "Snake" },
         { name: "JavaScript", icon: "Zap" },
-        { name: "C++", icon: "Cpu" },
-        { name: "Java", icon: "Coffee" }
-      ]
-    },
-    frontend: {
-      title: "Frontend Development",
-      icon: "Monitor",
-      skills: [
-        { name: "HTML", icon: "Layout" },
-        { name: "CSS", icon: "Palette" },
-        { name: "JavaScript", icon: "Zap" },
-        { name: "AJAX", icon: "RefreshCw" },
-        { name: "Tailwind CSS", icon: "Wind" },
-        { name: "Figma", icon: "Pen" },
-        { name: "React", icon: "Atom" },
-        { name: "Qt Creator", icon: "Square" },
-        { name: "Web Design", icon: "Globe" },
-        { name: "GUI Design", icon: "Smartphone" }
-      ]
-    },
-    backend: {
-      title: "Backend Development",
-      icon: "Server",
-      skills: [
-        { name: "Java Spring Boot", icon: "Leaf" },
-        { name: ".NET Core Web API", icon: "Box" },
-        { name: "ASP.NET MVC", icon: "Grid" },
-        { name: "PHP", icon: "FileCode" },
-        { name: "Laravel", icon: "Star" },
-        { name: "Django", icon: "Package" },
-        { name: "RESTful APIs", icon: "Link" },
-        { name: "API Integration", icon: "Paperclip" },
-        { name: "Data Processing", icon: "Database" },
-        { name: "Full-Stack Development", icon: "Layers" }
-      ]
-    },
-    database: {
-      title: "Database Management",
-      icon: "Database",
-      skills: [
-        { name: "Microsoft SQL Server", icon: "Database" },
-        { name: "MySQL", icon: "HardDrive" },
-        { name: "SQLite", icon: "Disc" },
-        { name: "SQL Server Programming", icon: "Code" }
+        { name: "HTML5", icon: "Layout" },
+        { name: "CSS", icon: "Palette" }
       ]
     },
     frameworks: {
       title: "Frameworks & Libraries",
       icon: "Package",
       skills: [
-        { name: "Selenium", icon: "PlayCircle" },
-        { name: "Pygame", icon: "Gamepad" },
-        { name: "Web Scraping", icon: "Spider" },
-        { name: "Design Patterns", icon: "Puzzle" }
+        { name: "Spring Boot", icon: "Leaf" },
+        { name: "React", icon: "Atom" },
+        { name: "JPA", icon: "Database" },
+        { name: "Mockito", icon: "TestTube" }
       ]
     },
-    devtools: {
-      title: "Development Tools",
+    database: {
+      title: "Databases",
+      icon: "Database",
+      skills: [
+        { name: "PostgreSQL", icon: "Database" },
+        { name: "MySQL", icon: "HardDrive" },
+        { name: "SQL Server", icon: "Code" },
+        { name: "SQLite", icon: "Disc" }
+      ]
+    },
+    devops: {
+      title: "DevOps & Tools",
       icon: "Wrench",
       skills: [
-        { name: "GitHub", icon: "GitBranch" },
+        { name: "Git/GitHub", icon: "GitBranch" },
+        { name: "Docker", icon: "Package" },
+        { name: "Kubernetes", icon: "Grid" },
+        { name: "Jenkins", icon: "Zap" },
+        { name: "Maven", icon: "Box" },
+        { name: "Apache Tomcat", icon: "Server" },
         { name: "JIRA", icon: "Trello" },
-        { name: "XAMPP", icon: "Server" },
-        { name: "Gtest", icon: "TestTube" },
-        { name: "JSON", icon: "Braces" }
+        { name: "GitLab", icon: "GitBranch" }
       ]
     },
-    software: {
-      title: "Software Design & Engineering",
+    cloud: {
+      title: "Cloud Platforms",
+      icon: "Cloud",
+      skills: [
+        { name: "AWS", icon: "Server" },
+        { name: "Azure", icon: "Cloud" }
+      ]
+    },
+    concepts: {
+      title: "Key Concepts",
       icon: "Cog",
       skills: [
-        { name: "Algorithms", icon: "GitCommit" },
-        { name: "Data Structures", icon: "Box" },
-        { name: "SDLC (Software Development Life Cycle)", icon: "RefreshCw" },
-        { name: "Multi-threaded Programming", icon: "Network" },
-        { name: "Object-Oriented Programming (OOP)", icon: "Package" },
-        { name: "Desktop Application Development", icon: "Cpu" }
-      ]
-    },
-    networking: {
-      title: "Networking & Operating Systems",
-      icon: "Globe",
-      skills: [
-        { name: "Linux Fundamentals", icon: "Terminal" },
-        { name: "Linux System Administration", icon: "Server" },
-        { name: "Network Configuration and Troubleshooting", icon: "Wifi" },
-        { name: "User Account Management", icon: "Users" },
-        { name: "Socket Programming", icon: "Link" },
-        { name: "UDP", icon: "Send" },
-        { name: "Ethernet", icon: "Cable" },
-        { name: "DNS", icon: "Globe" }
-      ]
-    },
-    optimization: {
-      title: "Optimization & Modeling",
-      icon: "TrendingUp",
-      skills: [
-        { name: "Stochastic Modeling", icon: "LineChart" },
-        { name: "Systems Modeling", icon: "GitMerge" },
-        { name: "Linear Programming", icon: "TrendingUp" },
-        { name: "Non-Linear Programming", icon: "Activity" },
-        { name: "Learning from Data", icon: "BarChart" },
-        { name: "Computational Intelligence", icon: "Brain" },
-        { name: "Optimization Algorithms", icon: "Settings" }
-      ]
-    },
-    other: {
-      title: "Other Proficiencies",
-      icon: "Plus",
-      skills: [
-        { name: "Cloud Computing", icon: "Cloud" },
-        { name: "Amazon Web Services (AWS)", icon: "Server" },
-        { name: "AI Training", icon: "Brain" }
+        { name: "REST APIs", icon: "Link" },
+        { name: "SOAP", icon: "Send" },
+        { name: "Microservices", icon: "Layers" },
+        { name: "CI/CD", icon: "RefreshCw" },
+        { name: "Agile", icon: "Users" },
+        { name: "Web Services (HTTP, JSON)", icon: "Globe" },
+        { name: "Spring Security", icon: "Shield" }
       ]
     }
   };

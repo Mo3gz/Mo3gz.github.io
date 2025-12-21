@@ -14,9 +14,6 @@ const ProjectsSection = () => {
       longDescription: `Developed a full-stack optimization system using Spring Boot backend that integrates multiple optimization algorithms (Genetic Algorithm and Ant Colony) to maximize fashion retail profitability. Implemented RESTful API endpoints that process product data and budget constraints, orchestrating parallel algorithm execution using CompletableFuture for improved performance. Created a data processing pipeline that handles CSV/Excel inputs and transforms business parameters into optimization models, ensuring data integrity throughout the system. Designed and integrated Python optimization services with Java backend through a robust integration layer, enabling complex mathematical modeling while maintaining system stability. Built an interactive web dashboard with real-time visualization of optimization results, providing actionable business insights for production, pricing, and inventory decisions.`,
       image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop",
       technologies: ["Java Spring Boot", "Optimization Algorithms", "Full-Stack Development", "API Integration", "Data Processing"],
-      category: "Full-Stack",
-      role: "Team Leader",
-      teamSize: 4,
       duration: "4 months",
       status: "Completed",
       github: "https://github.com/Mo3gz/fashion-optimization",
@@ -36,9 +33,6 @@ const ProjectsSection = () => {
       longDescription: `Developed a multilingual user registration system using Laravel framework. Implemented secure authentication, form validation, and WhatsApp number verification. Created a responsive interface with English and Arabic language support.`,
       image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?w=600&h=400&fit=crop",
       technologies: ["Laravel", "PHP", "XAMPP", "HTML", "Cascading Style Sheets (CSS)", "Tailwind CSS", "SQLite", "MySQL"],
-      category: "Backend",
-      role: "Lead Developer",
-      teamSize: 3,
       duration: "2 months",
       status: "Completed",
       github: "https://github.com/Mo3gz/laravel-registration",
@@ -58,9 +52,6 @@ const ProjectsSection = () => {
       longDescription: `Developed Garo Estate, a dynamic real estate platform designed for users to browse, filter, and manage property listings with ease. The website features secure login and sign-up, detailed property views with pricing, location, and amenities, along with user profiles and a messaging system for inquiries. Integrated APIs handle user, city, property, favorites, and inquiries to ensure seamless interactions and data management.`,
       image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
       technologies: ["HTML5", "Cascading Style Sheets (CSS)", "JavaScript", "ASP.NET MVC", "ASP.NET Web API"],
-      category: "Full-Stack",
-      role: "Project Manager",
-      teamSize: 5,
       duration: "6 months",
       status: "Completed",
       github: "https://github.com/Mo3gz/garo-estate",
@@ -80,9 +71,6 @@ const ProjectsSection = () => {
       longDescription: `The "Secure Notes Organizer" is a desktop application designed to provide users with a secure and organized way to manage sensitive information. The primary focus of the application is to allow users to create, store, and organize notes in a secure environment, ensuring the confidentiality of the stored information. A single server will be running that will save all the users' encrypted authentication data and all the notes. Multiple clients should be able to connect to the server allowing the users to login and see their notes, edit them or add new notes.`,
       image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&h=400&fit=crop",
       technologies: ["Qt Creator", "Desktop Application Development", "MySQL", "JSON", "Gtest"],
-      category: "Desktop Application",
-      role: "Solo Developer",
-      teamSize: 1,
       duration: "3 months",
       status: "Completed",
       github: "https://github.com/Mo3gz/secure-notes",
@@ -102,9 +90,6 @@ const ProjectsSection = () => {
       longDescription: `This project is a graphical implementation of the classic board game Othello. It combines a user-friendly menu interface built with Tkinter and an interactive game interface using Pygame. Users can play against another human or an AI opponent with adjustable difficulty levels.`,
       image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=600&h=400&fit=crop",
       technologies: ["Pygame", "Python (Programming Language)", "Graphical User Interface (GUI)"],
-      category: "Game Development",
-      role: "Lead Developer",
-      teamSize: 2,
       duration: "2 months",
       status: "Completed",
       github: "https://github.com/Mo3gz/othello-game",
@@ -124,9 +109,6 @@ const ProjectsSection = () => {
       longDescription: `Developed a Java desktop application for a Flight Reservation System with SQLite database integration, enabling user management, flight bookings, and administrative control over flights and aircraft.`,
       image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop",
       technologies: ["Java", "SQLite"],
-      category: "Desktop Application",
-      role: "Developer",
-      teamSize: 3,
       duration: "3 months",
       status: "Completed",
       github: "https://github.com/Mo3gz/flight-reservation",
@@ -146,9 +128,6 @@ const ProjectsSection = () => {
       longDescription: `Developed a Student Management System for the Faculty of Computers and Information (FCI), featuring efficient student information management, department assignments, and status toggling. The project utilized Django, Python, JavaScript, and CSS, with a focus on creating a user-friendly interface and seamless frontend-backend communication. Enhanced skills in web development, database management, and teamwork.`,
       image: "https://images.unsplash.com/photo-1523050854058-8df90110c9d1?w=600&h=400&fit=crop",
       technologies: ["Django", "Python (Programming Language)", "JavaScript", "HTML", "Cascading Style Sheets (CSS)", "AJAX"],
-      category: "Web Application",
-      role: "Technical Lead",
-      teamSize: 6,
       duration: "5 months",
       status: "Completed",
       github: "https://github.com/Mo3gz/student-affairs",
@@ -168,9 +147,6 @@ const ProjectsSection = () => {
       longDescription: `Authored the SRS document for 'Toffee,' an e-commerce platform for a sweets business, as part of the CS251 Software Engineering course, translating client needs into detailed system requirements.`,
       image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&h=400&fit=crop",
       technologies: ["Figma"],
-      category: "UI/UX Design",
-      role: "Requirements Analyst",
-      teamSize: 4,
       duration: "1 month",
       status: "Completed",
       github: "https://github.com/Mo3gz/toffee-shop",
@@ -185,12 +161,7 @@ const ProjectsSection = () => {
     }
   ];
 
-  const categories = ["All", "Full-Stack", "Backend", "Desktop Application", "Game Development", "Web Application", "UI/UX Design"];
-  const [activeCategory, setActiveCategory] = useState("All");
-
-  const filteredProjects = activeCategory === "All" 
-    ? projectsData 
-    : projectsData.filter(project => project.category === activeCategory);
+  const filteredProjects = projectsData;
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -251,24 +222,6 @@ const ProjectsSection = () => {
             </p>
           </motion.div>
 
-          {/* Category Filter */}
-          <motion.div variants={itemVariants} className="mb-12">
-            <div className="flex flex-wrap justify-center gap-3">
-              {categories.map((category) => (
-                <button
-                  key={category}
-                  onClick={() => setActiveCategory(category)}
-                  className={`px-4 py-2 rounded-full font-medium transition-all duration-200 ${
-                    activeCategory === category
-                      ? 'bg-primary text-white shadow-lg'
-                      : 'bg-secondary-100 text-text-secondary hover:bg-primary-50 hover:text-primary'
-                  }`}
-                >
-                  {category}
-                </button>
-              ))}
-            </div>
-          </motion.div>
 
           {/* Projects Grid */}
           <motion.div
@@ -313,30 +266,18 @@ const ProjectsSection = () => {
 
                   {/* Project Content */}
                   <div className="p-6">
-                    <div className="flex items-start justify-between mb-3">
-                      <h3 className="text-xl font-bold text-text-primary group-hover:text-primary transition-colors duration-200">
-                        {project.title}
-                      </h3>
-                      <div className="flex items-center text-sm text-text-secondary">
-                        <Icon name="Users" size={14} className="mr-1" />
-                        <span>{project.teamSize}</span>
-                      </div>
-                    </div>
+                    <h3 className="text-xl font-bold text-text-primary group-hover:text-primary transition-colors duration-200 mb-3">
+                      {project.title}
+                    </h3>
 
                     <p className="text-text-secondary mb-4 line-clamp-3">
                       {project.description}
                     </p>
 
                     {/* Project Meta */}
-                    <div className="flex items-center justify-between mb-4 text-sm text-text-secondary">
-                      <div className="flex items-center">
-                        <Icon name="Crown" size={14} className="mr-1 text-warning-500" />
-                        <span>{project.role}</span>
-                      </div>
-                      <div className="flex items-center">
-                        <Icon name="Clock" size={14} className="mr-1" />
-                        <span>{project.duration}</span>
-                      </div>
+                    <div className="flex items-center mb-4 text-sm text-text-secondary">
+                      <Icon name="Clock" size={14} className="mr-1" />
+                      <span>{project.duration}</span>
                     </div>
 
                     {/* Technologies */}
@@ -408,15 +349,7 @@ const ProjectsSection = () => {
                         <h2 className="text-3xl font-bold text-text-primary mb-2">
                           {selectedProject.title}
                         </h2>
-                        <div className="flex flex-wrap items-center gap-4 text-sm text-text-secondary">
-                          <div className="flex items-center">
-                            <Icon name="Crown" size={16} className="mr-2 text-warning-500" />
-                            <span>{selectedProject.role}</span>
-                          </div>
-                          <div className="flex items-center">
-                            <Icon name="Users" size={16} className="mr-2 text-primary" />
-                            <span>{selectedProject.teamSize} team members</span>
-                          </div>
+                        <div className="flex items-center gap-4 text-sm text-text-secondary">
                           <div className="flex items-center">
                             <Icon name="Clock" size={16} className="mr-2 text-accent-600" />
                             <span>{selectedProject.duration}</span>
