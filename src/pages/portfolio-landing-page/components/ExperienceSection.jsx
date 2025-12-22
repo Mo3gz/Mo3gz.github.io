@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Icon from 'components/AppIcon';
 
 const ExperienceSection = () => {
-  const [expandedExperience, setExpandedExperience] = useState(0);
+  const [expandedExperience, setExpandedExperience] = useState(-1);
 
   const experienceData = [
     {
@@ -179,9 +179,8 @@ const ExperienceSection = () => {
                   <motion.div
                     key={experience.id}
                     variants={itemVariants}
-                    className={`relative flex items-start ${
-                      isEven ? 'md:flex-row' : 'md:flex-row-reverse'
-                    }`}
+                    className={`relative flex items-start ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'
+                      }`}
                   >
                     {/* Timeline Dot */}
                     <div className={`absolute left-0 md:left-1/2 w-8 h-8 ${colorClasses.bg} ${colorClasses.border} border-2 rounded-full flex items-center justify-center transform md:-translate-x-1/2 z-10`}>
@@ -219,10 +218,10 @@ const ExperienceSection = () => {
                               </span>
                             </div>
                           </div>
-                          <Icon 
-                            name={isExpanded ? "ChevronUp" : "ChevronDown"} 
-                            size={20} 
-                            className="text-text-secondary ml-4 flex-shrink-0" 
+                          <Icon
+                            name={isExpanded ? "ChevronUp" : "ChevronDown"}
+                            size={20}
+                            className="text-text-secondary ml-4 flex-shrink-0"
                           />
                         </div>
 

@@ -8,15 +8,35 @@ const ProjectsSection = () => {
 
   const projectsData = [
     {
+      id: 0,
+      title: "Hala Kazim – Retreat Booking Website",
+      description: "Built a professional full-stack website for Halakazim, blending modern design with smooth functionality.",
+      longDescription: `Built a professional full-stack website for Halakazim, blending modern design with smooth functionality. Deployed and hosted live at halakazim.com to ensure real-world accessibility. Leveraged strong technical skills in Next.js, TypeScript, Prisma + PostgreSQL, Tailwind CSS, and JWT authentication.`,
+      image: "/assets/images/Hala_Kazim_Logo.jpeg",
+      technologies: ["Next.js", "Prisma ORM", "PostgreSQL", "Tailwind CSS", "JWT"],
+      duration: "2 months",
+      status: "Live",
+      link: "https://www.halakazim.com/",
+      linkType: "live",
+      features: [
+        "Professional full-stack architecture",
+        "Modern design and smooth functionality",
+        "Live deployment and hosting",
+        "Robust database management with Prisma & PostgreSQL",
+        "Secure JWT-based authentication",
+        "Responsive user interface"
+      ]
+    },
+    {
       id: 1,
-      title: "Fashion Quantity Optimization System",
+      title: "Quantitator",
       description: "Developed a full-stack optimization system using Spring Boot backend that integrates multiple optimization algorithms (Genetic Algorithm and Ant Colony) to maximize fashion retail profitability.",
       longDescription: `Developed a full-stack optimization system using Spring Boot backend that integrates multiple optimization algorithms (Genetic Algorithm and Ant Colony) to maximize fashion retail profitability. Implemented RESTful API endpoints that process product data and budget constraints, orchestrating parallel algorithm execution using CompletableFuture for improved performance. Created a data processing pipeline that handles CSV/Excel inputs and transforms business parameters into optimization models, ensuring data integrity throughout the system. Designed and integrated Python optimization services with Java backend through a robust integration layer, enabling complex mathematical modeling while maintaining system stability. Built an interactive web dashboard with real-time visualization of optimization results, providing actionable business insights for production, pricing, and inventory decisions.`,
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&h=400&fit=crop",
+      image: "/assets/images/Quantitator.png",
       technologies: ["Java Spring Boot", "Optimization Algorithms", "Full-Stack Development", "API Integration", "Data Processing"],
-      duration: "4 months",
+      duration: "10 months",
       status: "Completed",
-      github: "https://github.com/Mo3gz/fashion-optimization",
+      github: "https://github.com/aymanashrafmounir/Quantitator",
       features: [
         "Real-time inventory tracking and management",
         "ML-based demand forecasting algorithms",
@@ -27,41 +47,22 @@ const ProjectsSection = () => {
       ]
     },
     {
-      id: 2,
-      title: "Laravel Registration Website",
-      description: "Developed a multilingual user registration system using Laravel framework. Implemented secure authentication, form validation, and WhatsApp number verification. Created a responsive interface with English and Arabic language support.",
-      longDescription: `Developed a multilingual user registration system using Laravel framework. Implemented secure authentication, form validation, and WhatsApp number verification. Created a responsive interface with English and Arabic language support.`,
-      image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?w=600&h=400&fit=crop",
-      technologies: ["Laravel", "PHP", "XAMPP", "HTML", "Cascading Style Sheets (CSS)", "Tailwind CSS", "SQLite", "MySQL"],
+      id: 9,
+      title: "Cheques Printer",
+      description: "Built a bilingual (Arabic/English) desktop application for cheque generation and management using JavaFX and SQLite.",
+      longDescription: `Built a bilingual (Arabic/English) desktop application for cheque generation and management. Implemented live cheque preview, customizable templates, and secure record keeping. Designed with MVC architecture and a dedicated Service Layer for modularity and maintainability. Integrated SQLite for data storage, PDFBox for PDF generation, and ICU4J for Arabic text processing (BiDi & RTL). Enhanced usability with CRUD operations, advanced filtering, and robust data management.`,
+      image: "/assets/images/Cheque_Printer.jpeg",
+      technologies: ["JavaFX", "SQLite", "PDFBox", "MVC", "ICU4J"],
       duration: "2 months",
       status: "Completed",
-      github: "https://github.com/Mo3gz/laravel-registration",
+      github: "https://github.com/aymanashrafmounir/Cheque-Printer",
       features: [
-        "Secure user registration and authentication",
-        "Email verification and password reset",
-        "Role-based access control system",
-        "User profile management interface",
-        "Admin dashboard with user analytics",
-        "Rate limiting and security measures"
-      ]
-    },
-    {
-      id: 3,
-      title: "Garo Estate",
-      description: "Developed Garo Estate, a dynamic real estate platform designed for users to browse, filter, and manage property listings with ease. The website features secure login and sign-up, detailed property views with pricing, location, and amenities, along with user profiles and a messaging system for inquiries.",
-      longDescription: `Developed Garo Estate, a dynamic real estate platform designed for users to browse, filter, and manage property listings with ease. The website features secure login and sign-up, detailed property views with pricing, location, and amenities, along with user profiles and a messaging system for inquiries. Integrated APIs handle user, city, property, favorites, and inquiries to ensure seamless interactions and data management.`,
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
-      technologies: ["HTML5", "Cascading Style Sheets (CSS)", "JavaScript", "ASP.NET MVC", "ASP.NET Web API"],
-      duration: "6 months",
-      status: "Completed",
-      github: "https://github.com/Mo3gz/garo-estate",
-      features: [
-        "Property listing management system",
-        "Advanced search and filtering options",
-        "Client relationship management (CRM)",
-        "Appointment scheduling system",
-        "Document management and storage",
-        "Financial transaction tracking"
+        "Bilingual (Arabic/English) support",
+        "Live cheque preview and template customization",
+        "Secure record keeping and CRUD operations",
+        "PDF generation for easy printing",
+        "Advanced data filtering and management",
+        "Robust MVC architecture with Service Layer"
       ]
     },
     {
@@ -69,37 +70,16 @@ const ProjectsSection = () => {
       title: "Secure Notes Organizer",
       description: "The \'Secure Notes Organizer\' is a desktop application designed to provide users with a secure and organized way to manage sensitive information. The primary focus of the application is to allow users to create, store, and organize notes in a secure environment.",
       longDescription: `The "Secure Notes Organizer" is a desktop application designed to provide users with a secure and organized way to manage sensitive information. The primary focus of the application is to allow users to create, store, and organize notes in a secure environment, ensuring the confidentiality of the stored information. A single server will be running that will save all the users' encrypted authentication data and all the notes. Multiple clients should be able to connect to the server allowing the users to login and see their notes, edit them or add new notes.`,
-      image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&h=400&fit=crop",
+      image: "/assets/images/Secure_Notes_Logo.jpg",
       technologies: ["Qt Creator", "Desktop Application Development", "MySQL", "JSON", "Gtest"],
       duration: "3 months",
       status: "Completed",
-      github: "https://github.com/Mo3gz/secure-notes",
+      github: "https://github.com/aymanashrafmounir/Secure-Notes-Organizer",
       features: [
         "End-to-end encryption for all notes",
         "Rich text editor with formatting options",
         "Note categorization and tagging system",
         "Advanced search and filtering capabilities",
-        "Cross-platform synchronization",
-        "Biometric authentication support"
-      ]
-    },
-    {
-      id: 5,
-      title: "Othello Game with GUI",
-      description: "This project is a graphical implementation of the classic board game Othello. It combines a user-friendly menu interface built with Tkinter and an interactive game interface using Pygame. Users can play against another human or an AI opponent with adjustable difficulty levels.",
-      longDescription: `This project is a graphical implementation of the classic board game Othello. It combines a user-friendly menu interface built with Tkinter and an interactive game interface using Pygame. Users can play against another human or an AI opponent with adjustable difficulty levels.`,
-      image: "https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=600&h=400&fit=crop",
-      technologies: ["Pygame", "Python (Programming Language)", "Graphical User Interface (GUI)"],
-      duration: "2 months",
-      status: "Completed",
-      github: "https://github.com/Mo3gz/othello-game",
-      features: [
-        "Single-player mode with AI opponent",
-        "Multiplayer support for two players",
-        "Multiple AI difficulty levels",
-        "Game replay and analysis features",
-        "Comprehensive statistics tracking",
-        "Intuitive user interface design"
       ]
     },
     {
@@ -107,11 +87,11 @@ const ProjectsSection = () => {
       title: "Flight Reservation System",
       description: "Developed a Java desktop application for a Flight Reservation System with SQLite database integration, enabling user management, flight bookings, and administrative control over flights and aircraft.",
       longDescription: `Developed a Java desktop application for a Flight Reservation System with SQLite database integration, enabling user management, flight bookings, and administrative control over flights and aircraft.`,
-      image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop",
+      image: "/assets/images/Flight_Reservation_Logo.png",
       technologies: ["Java", "SQLite"],
       duration: "3 months",
       status: "Completed",
-      github: "https://github.com/Mo3gz/flight-reservation",
+      github: "https://github.com/aymanashrafmounir/Flight-Reservation-System",
       features: [
         "User registration and authentication",
         "Flight search and booking",
@@ -122,15 +102,34 @@ const ProjectsSection = () => {
       ]
     },
     {
+      id: 3,
+      title: "Garo Estate",
+      description: "Developed Garo Estate, a dynamic real estate platform designed for users to browse, filter, and manage property listings with ease. The website features secure login and sign-up, detailed property views with pricing, location, and amenities, along with user profiles and a messaging system for inquiries.",
+      longDescription: `Developed Garo Estate, a dynamic real estate platform designed for users to browse, filter, and manage property listings with ease. The website features secure login and sign-up, detailed property views with pricing, location, and amenities, along with user profiles and a messaging system for inquiries. Integrated APIs handle user, city, property, favorites, and inquiries to ensure seamless interactions and data management.`,
+      image: "/assets/images/Garo_Estate_Logo.jpg",
+      technologies: ["HTML5", "Cascading Style Sheets (CSS)", "JavaScript", "ASP.NET MVC", "ASP.NET Web API"],
+      duration: "6 months",
+      status: "Completed",
+      github: "https://github.com/aymanashrafmounir/garo-estate",
+      features: [
+        "Property listing management system",
+        "Advanced search and filtering options",
+        "Client relationship management (CRM)",
+        "Appointment scheduling system",
+        "Document management and storage",
+        "Financial transaction tracking"
+      ]
+    },
+    {
       id: 7,
       title: "Student Affairs Website",
       description: "Developed a Student Management System for the Faculty of Computers and Information (FCI), featuring efficient student information management, department assignments, and status toggling.",
       longDescription: `Developed a Student Management System for the Faculty of Computers and Information (FCI), featuring efficient student information management, department assignments, and status toggling. The project utilized Django, Python, JavaScript, and CSS, with a focus on creating a user-friendly interface and seamless frontend-backend communication. Enhanced skills in web development, database management, and teamwork.`,
-      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9d1?w=600&h=400&fit=crop",
+      image: "/assets/images/Student_Affairs.jpeg",
       technologies: ["Django", "Python (Programming Language)", "JavaScript", "HTML", "Cascading Style Sheets (CSS)", "AJAX"],
       duration: "5 months",
       status: "Completed",
-      github: "https://github.com/Mo3gz/student-affairs",
+      github: "https://github.com/aymanashrafmounir/student-affairs",
       features: [
         "Student enrollment and registration system",
         "Course management and scheduling",
@@ -145,11 +144,12 @@ const ProjectsSection = () => {
       title: "Toffee Shop",
       description: "Authored the SRS document for \'Toffee,\' an e-commerce platform for a sweets business, as part of the CS251 Software Engineering course, translating client needs into detailed system requirements.",
       longDescription: `Authored the SRS document for 'Toffee,' an e-commerce platform for a sweets business, as part of the CS251 Software Engineering course, translating client needs into detailed system requirements.`,
-      image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&h=400&fit=crop",
+      image: "/assets/images/Toffee_Shop_Logo.jpg",
       technologies: ["Figma"],
       duration: "1 month",
       status: "Completed",
-      github: "https://github.com/Mo3gz/toffee-shop",
+      link: "/assets/docs/Toffee_Shop_SRS.pdf",
+      linkType: "document",
       features: [
         "User story development",
         "Requirements gathering and documentation",
@@ -196,9 +196,9 @@ const ProjectsSection = () => {
     setSelectedProject(project);
   };
 
-  const handleGitHubClick = (e, githubUrl) => {
+  const handleLinkClick = (e, url) => {
     e.stopPropagation();
-    window.open(githubUrl, '_blank');
+    window.open(url, '_blank');
   };
 
   return (
@@ -217,7 +217,7 @@ const ProjectsSection = () => {
             </h2>
             <div className="w-20 h-1 bg-primary mx-auto rounded-full mb-6"></div>
             <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-              A showcase of my technical projects demonstrating expertise in full-stack development, 
+              A showcase of my technical projects demonstrating expertise in full-stack development,
               system design, and problem-solving capabilities.
             </p>
           </motion.div>
@@ -246,16 +246,22 @@ const ProjectsSection = () => {
                     <Image
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      className="w-full h-full object-contain p-2 group-hover:scale-110 transition-transform duration-300"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-text-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    
-                    {/* GitHub Link */}
+
                     <button
-                      onClick={(e) => handleGitHubClick(e, project.github)}
+                      onClick={(e) => handleLinkClick(e, project.link || project.github)}
                       className="absolute top-4 right-4 w-10 h-10 bg-surface/90 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-surface hover:scale-110"
                     >
-                      <Icon name="Github" size={20} className="text-text-primary" />
+                      <Icon
+                        name={
+                          project.linkType === 'document' ? "FileText" :
+                            project.linkType === 'live' ? "ExternalLink" : "Github"
+                        }
+                        size={20}
+                        className="text-text-primary"
+                      />
                     </button>
 
                     {/* Category Badge */}
@@ -331,7 +337,7 @@ const ProjectsSection = () => {
                       <Image
                         src={selectedProject.image}
                         alt={selectedProject.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain p-4 bg-secondary-50"
                       />
                     </div>
                     <button
@@ -356,13 +362,24 @@ const ProjectsSection = () => {
                           </div>
                         </div>
                       </div>
-                      
+
                       <button
-                        onClick={(e) => handleGitHubClick(e, selectedProject.github)}
+                        onClick={(e) => handleLinkClick(e, selectedProject.github || selectedProject.link)}
                         className="btn-primary inline-flex items-center space-x-2"
                       >
-                        <Icon name="Github" size={20} />
-                        <span>View on GitHub</span>
+                        <Icon
+                          name={
+                            selectedProject.linkType === 'document' ? "FileText" :
+                              selectedProject.linkType === 'live' ? "ExternalLink" : "Github"
+                          }
+                          size={20}
+                        />
+                        <span>
+                          {
+                            selectedProject.linkType === 'document' ? "View SRS Document" :
+                              selectedProject.linkType === 'live' ? "Live Preview" : "View on GitHub"
+                          }
+                        </span>
                       </button>
                     </div>
 

@@ -4,12 +4,12 @@ import Icon from 'components/AppIcon';
 
 const EducationSection = () => {
   const educationData = {
-    degree: "Bachelor's Degree in Computer Science & Operations Research and Decision Support",
+    degree: "Bachelor's Degree in Computer Science",
     university: "Cairo University",
     location: "Cairo, Egypt",
     duration: "Sep 2021 - Jun 2025",
     gpa: "2.63/4.0",
-    status: "Expected Graduation",
+    status: "Graduated",
     description: `Completed a comprehensive Computer Science program with focus on software engineering, algorithms, and optimization. Gained strong foundation in programming languages, database systems, software development methodologies, and operations research.`,
     coursework: [
       "Data Structures & Algorithms",
@@ -21,11 +21,6 @@ const EducationSection = () => {
       "Object-Oriented Programming",
       "System Analysis & Design"
     ],
-    achievements: [
-      "Led final year project team of 5 students",
-      "Participated in ACM programming contests",
-      "Member of Computer Science Student Association"
-    ]
   };
 
   const containerVariants = {
@@ -91,7 +86,7 @@ const EducationSection = () => {
                         <span>{educationData.location}</span>
                       </div>
                     </div>
-                    
+
                     <div className="text-right">
                       <div className="inline-flex items-center px-3 py-1 bg-success-100 text-success-600 rounded-full text-sm font-medium mb-2">
                         <Icon name="CheckCircle" size={16} className="mr-1" />
@@ -106,14 +101,14 @@ const EducationSection = () => {
                     {educationData.description}
                   </p>
 
-                  <div className="grid md:grid-cols-2 gap-8">
+                  <div>
                     {/* Relevant Coursework */}
                     <div>
                       <h4 className="text-lg font-semibold text-text-primary mb-4 flex items-center">
                         <Icon name="BookOpen" size={20} className="mr-2 text-primary" />
                         Relevant Coursework
                       </h4>
-                      <div className="space-y-2">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
                         {educationData.coursework.map((course, index) => (
                           <motion.div
                             key={index}
@@ -127,25 +122,7 @@ const EducationSection = () => {
                       </div>
                     </div>
 
-                    {/* Achievements */}
-                    <div>
-                      <h4 className="text-lg font-semibold text-text-primary mb-4 flex items-center">
-                        <Icon name="Award" size={20} className="mr-2 text-primary" />
-                        Achievements
-                      </h4>
-                      <div className="space-y-2">
-                        {educationData.achievements.map((achievement, index) => (
-                          <motion.div
-                            key={index}
-                            variants={itemVariants}
-                            className="flex items-start"
-                          >
-                            <Icon name="Star" size={16} className="text-warning-500 mr-3 mt-0.5 flex-shrink-0" />
-                            <span className="text-text-secondary">{achievement}</span>
-                          </motion.div>
-                        ))}
-                      </div>
-                    </div>
+
                   </div>
                 </div>
               </div>

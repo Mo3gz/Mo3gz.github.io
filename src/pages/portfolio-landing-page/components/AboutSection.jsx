@@ -11,7 +11,7 @@ With experience gained through internships at Siemens, DEPI, and active freelanc
       {
         icon: "Code2",
         title: "Backend Development",
-        description: "Specialized in Java, Spring Boot, .NET Core, and database design"
+        description: "Specialized in Java, Spring Boot, and database design"
       },
       {
         icon: "Layers",
@@ -21,7 +21,7 @@ With experience gained through internships at Siemens, DEPI, and active freelanc
       {
         icon: "Users",
         title: "Team Leadership",
-        description: "Led multiple project teams and mentored junior developers"
+        description: "Led multiple project teams"
       },
       {
         icon: "Zap",
@@ -33,7 +33,7 @@ With experience gained through internships at Siemens, DEPI, and active freelanc
       email: "aymanashrafmounir@gmail.com",
       phone: "+201226333795",
       linkedin: "https://www.linkedin.com/in/mo3gz/",
-      github: "https://github.com/mo3gz",
+      github: "https://github.com/aymanashrafmounir",
       location: "Cairo, Egypt"
     }
   };
@@ -66,7 +66,7 @@ With experience gained through internships at Siemens, DEPI, and active freelanc
       case 'phone':
         window.open(`tel:${value}`, '_blank');
         break;
-      case 'linkedin': case'github':
+      case 'linkedin': case 'github':
         window.open(value, '_blank');
         break;
       default:
@@ -103,7 +103,7 @@ With experience gained through internships at Siemens, DEPI, and active freelanc
                 <h3 className="text-xl font-semibold text-text-primary mb-4">
                   Get In Touch
                 </h3>
-                
+
                 <div className="grid sm:grid-cols-2 gap-4">
                   <button
                     onClick={() => handleContactClick('email', aboutData.contactInfo.email)}
@@ -157,7 +157,7 @@ With experience gained through internships at Siemens, DEPI, and active freelanc
               <h3 className="text-xl font-semibold text-text-primary mb-6">
                 What I Bring
               </h3>
-              
+
               <div className="space-y-6">
                 {aboutData.highlights.map((highlight, index) => (
                   <motion.div

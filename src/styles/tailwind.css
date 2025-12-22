@@ -139,6 +139,33 @@
   .animation-delay-500 {
     animation-delay: 500ms;
   }
+
+  /* Shimmer loading animation */
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2s infinite;
+  }
+
+  /* Skeleton loading utilities */
+  .skeleton {
+    @apply bg-secondary-200 rounded animate-pulse;
+  }
+
+  .skeleton-text {
+    @apply h-4 bg-secondary-200 rounded animate-pulse;
+  }
+
+  .skeleton-circle {
+    @apply bg-secondary-200 rounded-full animate-pulse;
+  }
 }
 
 /* Smooth scrolling for anchor links */

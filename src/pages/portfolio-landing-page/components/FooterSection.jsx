@@ -10,7 +10,7 @@ const FooterSection = () => {
     phone: "+201226333795",
     location: "Cairo, Egypt",
     linkedin: "https://www.linkedin.com/in/mo3gz/",
-    github: "https://github.com/Mo3gz"
+    github: "https://github.com/aymanashrafmounir"
   };
 
   const containerVariants = {
@@ -41,7 +41,7 @@ const FooterSection = () => {
       case 'phone':
         window.open(`tel:${value}`, '_blank');
         break;
-      case 'linkedin': case'github':
+      case 'linkedin': case 'github':
         window.open(value, '_blank');
         break;
       default:
@@ -54,7 +54,7 @@ const FooterSection = () => {
     if (element) {
       const headerHeight = 60;
       const elementPosition = element.offsetTop - headerHeight;
-      
+
       window.scrollTo({
         top: elementPosition,
         behavior: 'smooth'
@@ -84,11 +84,11 @@ const FooterSection = () => {
             <motion.div variants={itemVariants} className="lg:col-span-2">
               <h3 className="text-2xl font-bold mb-4">Ayman Ashraf Mounir</h3>
               <p className="text-surface/80 mb-6 leading-relaxed">
-                Passionate software engineer specializing in backend development with Java and Spring Boot. 
-                Based in Cairo, Egypt, I'm dedicated to building scalable, efficient applications and 
+                Passionate software engineer specializing in backend development with Java and Spring Boot.
+                Based in Cairo, Egypt, I'm dedicated to building scalable, efficient applications and
                 continuously expanding my technical expertise.
               </p>
-              
+
               {/* Social Links */}
               <div className="flex space-x-4">
                 <button
@@ -98,7 +98,7 @@ const FooterSection = () => {
                 >
                   <Icon name="Linkedin" size={20} className="text-surface group-hover:scale-110 transition-transform duration-200" />
                 </button>
-                
+
                 <button
                   onClick={() => handleContactClick('github', contactInfo.github)}
                   className="w-10 h-10 bg-surface/10 hover:bg-surface/20 rounded-full flex items-center justify-center transition-colors duration-200 group"
@@ -106,7 +106,7 @@ const FooterSection = () => {
                 >
                   <Icon name="Github" size={20} className="text-surface group-hover:scale-110 transition-transform duration-200" />
                 </button>
-                
+
                 <button
                   onClick={() => handleContactClick('email', contactInfo.email)}
                   className="w-10 h-10 bg-surface/10 hover:bg-surface/20 rounded-full flex items-center justify-center transition-colors duration-200 group"
@@ -114,7 +114,7 @@ const FooterSection = () => {
                 >
                   <Icon name="Mail" size={20} className="text-surface group-hover:scale-110 transition-transform duration-200" />
                 </button>
-                
+
                 <button
                   onClick={() => handleContactClick('phone', contactInfo.phone)}
                   className="w-10 h-10 bg-surface/10 hover:bg-surface/20 rounded-full flex items-center justify-center transition-colors duration-200 group"
@@ -137,7 +137,7 @@ const FooterSection = () => {
                   <Icon name="Mail" size={16} className="mr-3 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" />
                   <span className="break-all">{contactInfo.email}</span>
                 </button>
-                
+
                 <button
                   onClick={() => handleContactClick('phone', contactInfo.phone)}
                   className="flex items-center text-surface/80 hover:text-surface transition-colors duration-200 group"
@@ -145,7 +145,7 @@ const FooterSection = () => {
                   <Icon name="Phone" size={16} className="mr-3 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" />
                   <span>{contactInfo.phone}</span>
                 </button>
-                
+
                 <div className="flex items-center text-surface/80">
                   <Icon name="MapPin" size={16} className="mr-3 flex-shrink-0" />
                   <span>{contactInfo.location}</span>
@@ -167,7 +167,7 @@ const FooterSection = () => {
             <div className="text-surface/60 text-sm mb-4 md:mb-0">
               <p>&copy; {currentYear} Ayman Ashraf Mounir. All rights reserved.</p>
             </div>
-            
+
             <div className="flex items-center space-x-6">
               <button
                 onClick={scrollToTop}

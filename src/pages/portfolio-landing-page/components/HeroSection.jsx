@@ -12,7 +12,7 @@ const HeroSection = () => {
     email: "aymanashrafmounir@gmail.com",
     phone: "+201226333795",
     linkedin: "https://www.linkedin.com/in/mo3gz/",
-    github: "https://github.com/mo3gz",
+    github: "https://github.com/aymanashrafmounir",
     profileImage: "/assets/images/367497185_6523363137722300_857630299546170183_n-1750205012701.jpg"
   };
 
@@ -44,7 +44,7 @@ const HeroSection = () => {
       case 'phone':
         window.open(`tel:${value}`, '_blank');
         break;
-      case 'linkedin': case'github':
+      case 'linkedin': case 'github':
         window.open(value, '_blank');
         break;
       default:
@@ -114,7 +114,7 @@ const HeroSection = () => {
               <Icon name="Mail" size={20} />
               <span>Email Me</span>
             </button>
-            
+
             <button
               onClick={() => handleContactClick('linkedin', personalInfo.linkedin)}
               className="btn-secondary inline-flex items-center space-x-2 hover:scale-105 transition-transform duration-200"
@@ -122,7 +122,7 @@ const HeroSection = () => {
               <Icon name="Linkedin" size={20} />
               <span>LinkedIn</span>
             </button>
-            
+
             <button
               onClick={() => handleContactClick('github', personalInfo.github)}
               className="btn-secondary inline-flex items-center space-x-2 hover:scale-105 transition-transform duration-200"
@@ -143,7 +143,7 @@ const HeroSection = () => {
               transition={{ duration: 2, repeat: Infinity }}
               className="cursor-pointer"
               onClick={() => {
-                document.getElementById('about')?.scrollIntoView({ 
+                document.getElementById('about')?.scrollIntoView({
                   behavior: 'smooth',
                   block: 'start'
                 });

@@ -236,11 +236,11 @@ const CertificatesSection = () => {
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-4">
-              Professional Certifications
+              Certifications
             </h2>
             <div className="w-20 h-1 bg-primary mx-auto rounded-full mb-6"></div>
             <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-              A comprehensive collection of professional certifications demonstrating continuous learning 
+              A comprehensive collection of certifications demonstrating continuous learning
               and expertise across various technologies and methodologies.
             </p>
           </motion.div>
@@ -263,7 +263,7 @@ const CertificatesSection = () => {
                       <div className={`w-12 h-12 ${colorClasses.bg} rounded-lg flex items-center justify-center flex-shrink-0`}>
                         <Icon name={certificate.icon} size={24} className={colorClasses.text} />
                       </div>
-                      
+
                       <div className="flex items-center space-x-2">
                         {certificate.verified && (
                           <div className="flex items-center px-2 py-1 bg-success-100 text-success-600 rounded-full text-xs font-medium">
@@ -277,18 +277,18 @@ const CertificatesSection = () => {
                     <h3 className="text-lg font-bold text-text-primary mb-2 leading-tight">
                       {certificate.title}
                     </h3>
-                    
+
                     <div className="space-y-2 mb-4">
                       <div className="flex items-center text-sm text-text-secondary">
                         <Icon name="Building" size={14} className="mr-2 flex-shrink-0" />
                         <span className="truncate">{certificate.issuer}</span>
                       </div>
-                      
+
                       <div className="flex items-center text-sm text-text-secondary">
                         <Icon name="Calendar" size={14} className="mr-2 flex-shrink-0" />
                         <span>{certificate.date}</span>
                       </div>
-                      
+
                       <div className="flex items-center text-sm text-text-secondary">
                         <Icon name="Hash" size={14} className="mr-2 flex-shrink-0" />
                         <span className="truncate font-mono text-xs">{certificate.credentialId}</span>
@@ -322,10 +322,10 @@ const CertificatesSection = () => {
                       className="flex items-center text-primary hover:text-primary-700 text-sm font-medium transition-colors duration-200"
                     >
                       <span>{isExpanded ? 'Show Less' : 'View Details'}</span>
-                      <Icon 
-                        name={isExpanded ? "ChevronUp" : "ChevronDown"} 
-                        size={16} 
-                        className="ml-1 transition-transform duration-200" 
+                      <Icon
+                        name={isExpanded ? "ChevronUp" : "ChevronDown"}
+                        size={16}
+                        className="ml-1 transition-transform duration-200"
                       />
                     </button>
                   </div>
@@ -369,11 +369,11 @@ const CertificatesSection = () => {
                 Commitment to Excellence
               </h3>
               <p className="text-text-secondary mb-6 max-w-3xl mx-auto leading-relaxed">
-                These certifications represent my dedication to continuous learning and professional development. 
-                Each certification has enhanced my technical skills and provided valuable insights into industry 
+                These certifications represent my dedication to continuous learning and professional development.
+                Each certification has enhanced my technical skills and provided valuable insights into industry
                 best practices and emerging technologies.
               </p>
-              
+
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="flex flex-col items-center">
                   <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mb-3">
@@ -382,7 +382,7 @@ const CertificatesSection = () => {
                   <h4 className="text-xl font-semibold text-text-primary mb-2">11+</h4>
                   <p className="text-text-secondary">Professional Certifications</p>
                 </div>
-                
+
                 <div className="flex flex-col items-center">
                   <div className="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mb-3">
                     <Icon name="TrendingUp" size={32} className="text-success-600" />
@@ -390,7 +390,7 @@ const CertificatesSection = () => {
                   <h4 className="text-xl font-semibold text-text-primary mb-2">100%</h4>
                   <p className="text-text-secondary">Verified Credentials</p>
                 </div>
-                
+
                 <div className="flex flex-col items-center">
                   <div className="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mb-3">
                     <Icon name="BookOpen" size={32} className="text-accent-600" />
